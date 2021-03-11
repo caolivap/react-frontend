@@ -3,7 +3,8 @@ import UserService from '../services/UserService';
 
 class UserComponent extends React.Component {
 
-    constructor(){
+    constructor(props){
+        super(props)
         this.state = {
             users:[]
         }
@@ -36,7 +37,7 @@ class UserComponent extends React.Component {
                                     <td> {user.id} </td>
                                     <td> {user.firstName} </td>
                                     <td> {user.lastName} </td>
-                                    <td> {user.emailId} </td> 
+                                    <td> {user.email} </td> 
                                 </tr>
 
                             )
